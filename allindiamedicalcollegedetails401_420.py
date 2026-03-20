@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/homi-bhabha-cancer-hospital-varanasi-180737",
-  "https://www.shiksha.com/college/vlcc-institute-delhi-lajpat-nagar-27722",
-  "https://www.shiksha.com/college/tech-mahindra-smart-academy-for-healthcare-chandigarh-mohali-53674",
-  "https://www.shiksha.com/college/p-r-pote-patil-college-of-engineering-and-management-amravati-59809",
-  "https://www.shiksha.com/university/sree-sankaracharya-university-of-sanskrit-ernakulum-64811",
-  "https://www.shiksha.com/college/best-dental-science-college-madurai-78037",
-  "https://www.shiksha.com/college/rbvrr-women-s-college-of-pharmacy-hyderabad-87845",
-  "https://www.shiksha.com/college/sri-sathya-sai-institute-of-higher-medical-science-bangalore-106049",
-  "https://www.shiksha.com/college/aditya-college-of-pharmacy-andhra-pradesh-other-61189",
-  "https://www.shiksha.com/college/s-c-mutha-aryangla-vaidyak-mahavidyalaya-satara-68069",
-  "https://www.shiksha.com/college/asan-memorial-dental-college-and-hospital-kanchipuram-78291",
-  "https://www.shiksha.com/college/pharmacy-college-azamgarh-60079",
-  "https://www.shiksha.com/college/ana-group-of-institutions-bareilly-63245",
-  "https://www.shiksha.com/college/government-medical-college-jalaun-orai-149703",
-  "https://www.shiksha.com/college/sharada-ayurveda-medical-college-and-hospital-karnataka-other-186523",
-  "https://www.shiksha.com/college/indo-global-group-of-colleges-mohali-28011",
-  "https://www.shiksha.com/college/veda-degree-college-hyderabad-77613",
-  "https://www.shiksha.com/college/rasiklal-m-dhariwal-institute-of-pharmaceutical-education-and-research-pune-88413",
-  "https://www.shiksha.com/college/science-college-kokrajhar-112039",
-  "https://www.shiksha.com/college/jain-deemed-to-be-university-online-campus-jayanagar-bangalore-151627",
+  "https://www.shiksha.com/college/guru-nanak-ayruvedic-medical-college-and-research-institute-ludhiana-61965",
+  "https://www.shiksha.com/college/dr-n-y-tasgaonkar-institute-of-medical-science-raigad-180689",
+  "https://www.shiksha.com/college/maharaja-jitendra-narayan-medical-college-and-hospital-coochbehar-180779",
+  "https://www.shiksha.com/university/amaltas-university-dewas-236350",
+  "https://www.shiksha.com/college/dayanand-dinanath-group-of-institutions-kanpur-27707",
+  "https://www.shiksha.com/college/iit-dharwad-indian-institute-of-technology-53833",
+  "https://www.shiksha.com/college/kasturba-hospital-new-delhi-darya-ganj-67561",
+  "https://www.shiksha.com/college/shree-swaminarayan-homeopathic-college-kalol-87465",
+  "https://www.shiksha.com/college/puran-murti-campus-sonepat-32346",
+  "https://www.shiksha.com/college/nallasopara-ayurved-college-thane-east-thane-68105",
+  "https://www.shiksha.com/college/alphonsa-college-kottayam-194553",
+  "https://www.shiksha.com/college/dhanarua-school-of-nursing-patna-201601",
+  "https://www.shiksha.com/college/kc-group-of-institutions-una-52060",
+  "https://www.shiksha.com/college/dr-b-r-ambedkar-state-institute-of-medical-sciences-sahibzada-ajit-singh-nagar-180777",
+  "https://www.shiksha.com/college/saroop-rani-government-college-for-women-amritsar-76491",
+  "https://www.shiksha.com/college/s-d-college-muzaffarnagar-111855",
+  "https://www.shiksha.com/college/dr-mahendra-kumar-chhote-lal-bind-mahavidyalaya-allahabad-115905",
+  "https://www.shiksha.com/college/virendra-kumar-sakhlecha-government-medical-college-neemuch-231170",
+  "https://www.shiksha.com/college/rani-chennamma-college-of-pharmacy-belgaum-67767",
+  "https://www.shiksha.com/college/dkmm-homoeopathy-medical-college-and-hospital-aurangabad-70081",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1341
+    c_count = 1461
 
     try:
         for base_url in BASE_URL:
