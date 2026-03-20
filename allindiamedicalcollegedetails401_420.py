@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/guru-nanak-ayruvedic-medical-college-and-research-institute-ludhiana-61965",
-  "https://www.shiksha.com/college/dr-n-y-tasgaonkar-institute-of-medical-science-raigad-180689",
-  "https://www.shiksha.com/college/maharaja-jitendra-narayan-medical-college-and-hospital-coochbehar-180779",
-  "https://www.shiksha.com/university/amaltas-university-dewas-236350",
-  "https://www.shiksha.com/college/dayanand-dinanath-group-of-institutions-kanpur-27707",
-  "https://www.shiksha.com/college/iit-dharwad-indian-institute-of-technology-53833",
-  "https://www.shiksha.com/college/kasturba-hospital-new-delhi-darya-ganj-67561",
-  "https://www.shiksha.com/college/shree-swaminarayan-homeopathic-college-kalol-87465",
-  "https://www.shiksha.com/college/puran-murti-campus-sonepat-32346",
-  "https://www.shiksha.com/college/nallasopara-ayurved-college-thane-east-thane-68105",
-  "https://www.shiksha.com/college/alphonsa-college-kottayam-194553",
-  "https://www.shiksha.com/college/dhanarua-school-of-nursing-patna-201601",
-  "https://www.shiksha.com/college/kc-group-of-institutions-una-52060",
-  "https://www.shiksha.com/college/dr-b-r-ambedkar-state-institute-of-medical-sciences-sahibzada-ajit-singh-nagar-180777",
-  "https://www.shiksha.com/college/saroop-rani-government-college-for-women-amritsar-76491",
-  "https://www.shiksha.com/college/s-d-college-muzaffarnagar-111855",
-  "https://www.shiksha.com/college/dr-mahendra-kumar-chhote-lal-bind-mahavidyalaya-allahabad-115905",
-  "https://www.shiksha.com/college/virendra-kumar-sakhlecha-government-medical-college-neemuch-231170",
-  "https://www.shiksha.com/college/rani-chennamma-college-of-pharmacy-belgaum-67767",
-  "https://www.shiksha.com/college/dkmm-homoeopathy-medical-college-and-hospital-aurangabad-70081",
+  "https://www.shiksha.com/college/rajarshi-shahu-college-of-pharmacy-maharashtra-other-89077",
+  "https://www.shiksha.com/college/mubarak-paramedical-training-institute-srinagar-151849",
+  "https://www.shiksha.com/college/dr-sarvesh-shukla-institute-of-pharmacy-bahraich-156347",
+  "https://www.shiksha.com/college/m-m-m-college-of-health-sciences-chennai-193647",
+  "https://www.shiksha.com/college/mahatma-gandhi-physiotherapy-college-ahmedabad-197317",
+  "https://www.shiksha.com/college/autonomous-state-medical-college-sonebhadra-uttar-pradesh-other-231192",
+  "https://www.shiksha.com/college/al-badar-dental-college-and-hospital-gulbarga-67831",
+  "https://www.shiksha.com/college/banaras-institute-of-pharmacy-varanasi-148643",
+  "https://www.shiksha.com/college/government-polytechnic-college-srinagar-uttarakhand-other-98663",
+  "https://www.shiksha.com/college/shree-ram-ayurvedic-medical-college-and-hospital-meerut-183165",
+  "https://www.shiksha.com/college/baba-haridass-college-of-pharmacy-and-technology-delhi-88873",
+  "https://www.shiksha.com/college/bharti-vidyapeeth-s-institute-of-pharmacy-aided-wing-pune-89043",
+  "https://www.shiksha.com/college/eklavya-college-of-pharmacy-sangli-100043",
+  "https://www.shiksha.com/college/dr-shankar-dayal-sharma-ayurved-college-bhopal-230148",
+  "https://www.shiksha.com/college/dapoli-homoeopathic-medical-college-and-general-hospital-ratnagiri-70075",
+  "https://www.shiksha.com/college/shree-rasiklal-manikchand-dhariwal-ayurveda-college-and-hospital-valsad-87415",
+  "https://www.shiksha.com/college/rvs-group-of-institution-kannampalayam-campus-coimbatore-151885",
+  "https://www.shiksha.com/college/svs-group-of-institutions-warangal-61341",
+  "https://www.shiksha.com/college/raipur-homoeopathic-college-87205",
+  "https://www.shiksha.com/college/k-g-college-of-physiotherapy-coimbatore-193643",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1461
+    c_count = 1661
 
     try:
         for base_url in BASE_URL:
