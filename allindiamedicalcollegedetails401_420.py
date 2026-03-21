@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/rajarshi-shahu-college-of-pharmacy-maharashtra-other-89077",
-  "https://www.shiksha.com/college/mubarak-paramedical-training-institute-srinagar-151849",
-  "https://www.shiksha.com/college/dr-sarvesh-shukla-institute-of-pharmacy-bahraich-156347",
-  "https://www.shiksha.com/college/m-m-m-college-of-health-sciences-chennai-193647",
-  "https://www.shiksha.com/college/mahatma-gandhi-physiotherapy-college-ahmedabad-197317",
-  "https://www.shiksha.com/college/autonomous-state-medical-college-sonebhadra-uttar-pradesh-other-231192",
-  "https://www.shiksha.com/college/al-badar-dental-college-and-hospital-gulbarga-67831",
-  "https://www.shiksha.com/college/banaras-institute-of-pharmacy-varanasi-148643",
-  "https://www.shiksha.com/college/government-polytechnic-college-srinagar-uttarakhand-other-98663",
-  "https://www.shiksha.com/college/shree-ram-ayurvedic-medical-college-and-hospital-meerut-183165",
-  "https://www.shiksha.com/college/baba-haridass-college-of-pharmacy-and-technology-delhi-88873",
-  "https://www.shiksha.com/college/bharti-vidyapeeth-s-institute-of-pharmacy-aided-wing-pune-89043",
-  "https://www.shiksha.com/college/eklavya-college-of-pharmacy-sangli-100043",
-  "https://www.shiksha.com/college/dr-shankar-dayal-sharma-ayurved-college-bhopal-230148",
-  "https://www.shiksha.com/college/dapoli-homoeopathic-medical-college-and-general-hospital-ratnagiri-70075",
-  "https://www.shiksha.com/college/shree-rasiklal-manikchand-dhariwal-ayurveda-college-and-hospital-valsad-87415",
-  "https://www.shiksha.com/college/rvs-group-of-institution-kannampalayam-campus-coimbatore-151885",
-  "https://www.shiksha.com/college/svs-group-of-institutions-warangal-61341",
-  "https://www.shiksha.com/college/raipur-homoeopathic-college-87205",
-  "https://www.shiksha.com/college/k-g-college-of-physiotherapy-coimbatore-193643",
+  "https://www.shiksha.com/college/vivo-healthcare-mumbai-thane-63947",
+  "https://www.shiksha.com/college/super-speciality-paediatric-hospital-and-post-graduate-teaching-institute-noida-67719",
+  "https://www.shiksha.com/college/mosc-institute-of-allied-health-sciences-ernakulum-73741",
+  "https://www.shiksha.com/college/state-l-b-s-homeo-medical-college-uttar-pradesh-other-87033",
+  "https://www.shiksha.com/college/ashokrao-mane-institute-of-pharmaceutical-sciences-and-research-kolhapur-88501",
+  "https://www.shiksha.com/college/academy-for-clinical-excellence-santacruz-east-mumbai-24195",
+  "https://www.shiksha.com/college/hindustan-institute-of-maritime-training-himt-kilpauk-chennai-40606",
+  "https://www.shiksha.com/college/rayat-bahra-group-of-institutes-ropar-campus-47376",
+  "https://www.shiksha.com/college/madurai-medical-college-madurai-63023",
+  "https://www.shiksha.com/college/government-medical-college-anantnag-67543",
+  "https://www.shiksha.com/college/devki-mahavir-homoeopathic-medical-college-and-research-hospital-garhwa-87435",
+  "https://www.shiksha.com/college/sanjivani-institute-of-technology-and-management-bahraich-89261",
+  "https://www.shiksha.com/college/sardar-ajeet-singh-memorial-smriti-mahavidhalaya-bhopal-197459",
+  "https://www.shiksha.com/college/a-j-institute-of-speech-and-hearing-karnataka-other-184927",
+  "https://www.shiksha.com/college/excel-college-of-pharmacy-excel-group-institutions-namakkal-212319",
+  "https://www.shiksha.com/college/autonomous-state-medical-college-kushinagar-uttar-pradesh-other-231138",
+  "https://www.shiksha.com/college/iddcr-international-drug-discovery-and-clinical-research-jubilee-hills-hyderabad-33982",
+  "https://www.shiksha.com/college/dav-dental-college-solan-78173",
+  "https://www.shiksha.com/college/siddhant-college-of-pharmacy-pune-147795",
+  "https://www.shiksha.com/college/chebrolu-hanumaiah-institute-of-pharmaceutical-sciences-guntur-61173",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1661
+    c_count = 1821
 
     try:
         for base_url in BASE_URL:
