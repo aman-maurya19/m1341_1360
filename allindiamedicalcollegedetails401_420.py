@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/vivo-healthcare-mumbai-thane-63947",
-  "https://www.shiksha.com/college/super-speciality-paediatric-hospital-and-post-graduate-teaching-institute-noida-67719",
-  "https://www.shiksha.com/college/mosc-institute-of-allied-health-sciences-ernakulum-73741",
-  "https://www.shiksha.com/college/state-l-b-s-homeo-medical-college-uttar-pradesh-other-87033",
-  "https://www.shiksha.com/college/ashokrao-mane-institute-of-pharmaceutical-sciences-and-research-kolhapur-88501",
-  "https://www.shiksha.com/college/academy-for-clinical-excellence-santacruz-east-mumbai-24195",
-  "https://www.shiksha.com/college/hindustan-institute-of-maritime-training-himt-kilpauk-chennai-40606",
-  "https://www.shiksha.com/college/rayat-bahra-group-of-institutes-ropar-campus-47376",
-  "https://www.shiksha.com/college/madurai-medical-college-madurai-63023",
-  "https://www.shiksha.com/college/government-medical-college-anantnag-67543",
-  "https://www.shiksha.com/college/devki-mahavir-homoeopathic-medical-college-and-research-hospital-garhwa-87435",
-  "https://www.shiksha.com/college/sanjivani-institute-of-technology-and-management-bahraich-89261",
-  "https://www.shiksha.com/college/sardar-ajeet-singh-memorial-smriti-mahavidhalaya-bhopal-197459",
-  "https://www.shiksha.com/college/a-j-institute-of-speech-and-hearing-karnataka-other-184927",
-  "https://www.shiksha.com/college/excel-college-of-pharmacy-excel-group-institutions-namakkal-212319",
-  "https://www.shiksha.com/college/autonomous-state-medical-college-kushinagar-uttar-pradesh-other-231138",
-  "https://www.shiksha.com/college/iddcr-international-drug-discovery-and-clinical-research-jubilee-hills-hyderabad-33982",
-  "https://www.shiksha.com/college/dav-dental-college-solan-78173",
-  "https://www.shiksha.com/college/siddhant-college-of-pharmacy-pune-147795",
-  "https://www.shiksha.com/college/chebrolu-hanumaiah-institute-of-pharmaceutical-sciences-guntur-61173",
+  "https://www.shiksha.com/college/indian-institute-of-public-health-shillong-101367",
+  "https://www.shiksha.com/college/sundaram-medical-foundation-dr-rangarajan-memorial-hospital-chennai-106043",
+  "https://www.shiksha.com/college/university-department-of-basic-and-applied-sciences-mgm-university-aurangabad-202605",
+  "https://www.shiksha.com/college/sarjug-dental-college-darbhanga-67455",
+  "https://www.shiksha.com/college/vaageswari-college-of-pharmacy-karimnagar-87821",
+  "https://www.shiksha.com/college/vaidya-yagya-dutt-sharma-ayurved-mahavidyalya-bulandshahr-183467",
+  "https://www.shiksha.com/college/shri-swaminarayan-manav-seva-trust-s-surat-196829",
+  "https://www.shiksha.com/college/heritage-group-of-institutions-mysore-215821",
+  "https://www.shiksha.com/college/pt-bhori-lal-gyatri-memorial-college-bhopal-74543",
+  "https://www.shiksha.com/college/shri-ram-college-of-pharmacy-karnal-87959",
+  "https://www.shiksha.com/college/lakeshore-hospital-and-research-centre-kerala-other-105897",
+  "https://www.shiksha.com/college/s-s-p-shikshan-sansthas-siddhi-college-of-pharmacy-pune-147753",
+  "https://www.shiksha.com/college/government-yoga-and-naturopathy-college-chennai-193627",
+  "https://www.shiksha.com/college/chikkamagaluru-institute-of-medical-sciences-karnataka-other-207489",
+  "https://www.shiksha.com/college/bapatla-college-of-pharmacy-bapatla-andhra-pradesh-other-63499",
+  "https://www.shiksha.com/college/akshaya-institute-of-pharmacy-tumkur-67821",
+  "https://www.shiksha.com/college/fortis-hospital-mumbai-105889",
+  "https://www.shiksha.com/college/icri-srinivas-university-mangalore-145695",
+  "https://www.shiksha.com/college/bhagwan-mahaveer-institute-of-medical-sciences-sonepat-146665",
+  "https://www.shiksha.com/college/s-d-college-of-pharmacy-betul-147223",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1821
+    c_count = 2041
 
     try:
         for base_url in BASE_URL:
