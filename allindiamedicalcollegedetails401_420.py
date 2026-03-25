@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/rathinam-college-of-pharmacy-coimbatore-236062",
-  "https://www.shiksha.com/college/emversity-school-of-hospitality-jaipur-236988",
-  "https://www.shiksha.com/college/fabtech-technical-campus-college-of-engineering-maharashtra-other-59787",
-  "https://www.shiksha.com/college/p-ramireddy-memorial-college-of-pharmacy-kadapa-61107",
-  "https://www.shiksha.com/college/arya-kanya-mahavidyalya-kurukshetra-70263",
-  "https://www.shiksha.com/college/s-d-college-barnala-75151",
-  "https://www.shiksha.com/college/adarsh-bhartiya-college-pathankot-76777",
-  "https://www.shiksha.com/college/peoples-college-of-forensic-science-and-cyber-security-aurangabad-130375",
-  "https://www.shiksha.com/college/gurukul-institute-of-pharmaceutical-science-and-research-gwalior-147353",
-  "https://www.shiksha.com/college/future-medicine-academy-whitefield-bangalore-149667",
-  "https://www.shiksha.com/college/k-g-college-of-pharmacy-and-research-institute-villupuram-193583",
-  "https://www.shiksha.com/college/m-m-joshi-eye-institute-hubli-199769",
-  "https://www.shiksha.com/college/s-sidharatha-paramedical-training-institue-jammu-201745",
-  "https://www.shiksha.com/college/cygnus-sonia-hospital-nagloi-delhi-other-245128",
-  "https://www.shiksha.com/college/amity-school-of-communication-amity-university-noida-1018",
-  "https://www.shiksha.com/college/shri-sai-college-of-pharmacy-khadala-aurangabad-88987",
-  "https://www.shiksha.com/college/noble-hospital-pune-106093",
-  "https://www.shiksha.com/college/arihant-college-of-pharmacy-ahmednagar-150705",
-  "https://www.shiksha.com/college/aurangabad-pharmacy-college-mitmita-179645",
-  "https://www.shiksha.com/college/college-of-paramedical-sciences-haldia-196171",
+  "https://www.shiksha.com/college/ayurvedic-medical-college-dharwad-68195",
+  "https://www.shiksha.com/college/shri-bm-shah-college-of-pharmaceutical-education-and-research-sabarkantha-88721",
+  "https://www.shiksha.com/college/lakshmi-narain-college-of-pharmacy-indore-156603",
+  "https://www.shiksha.com/college/wisdom-college-of-pharmacy-lucknow-156801",
+  "https://www.shiksha.com/college/lbs-group-of-institutes-jabalpur-156917",
+  "https://www.shiksha.com/college/svm-pharmacy-college-raniganj-pratapgarh-181985",
+  "https://www.shiksha.com/college/adhiparasakthi-college-of-physiotherapy-and-paramedical-sciences-kanchipuram-193849",
+  "https://www.shiksha.com/college/royal-institute-of-allied-medical-sciences-bhadrak-200395",
+  "https://www.shiksha.com/college/veer-vijay-pharmacy-college-saharanpur-149021",
+  "https://www.shiksha.com/college/k-p-singh-memorial-institute-of-pharmacy-sitapur-149359",
+  "https://www.shiksha.com/college/chennai-medical-college-hospital-and-reserch-centre-tiruchirappalli-193679",
+  "https://www.shiksha.com/college/b-r-s-institute-of-medical-sciences-panchkula-195353",
+  "https://www.shiksha.com/college/amritsar-pharmacy-college-196035",
+  "https://www.shiksha.com/college/f-g-m-government-college-hisar-202263",
+  "https://www.shiksha.com/college/jai-hind-college-of-pharmacy-maharashtra-other-210389",
+  "https://www.shiksha.com/provider/tech-mahindra-226561",
+  "https://www.shiksha.com/college/kalpana-college-of-pharmacy-kcp-bardhaman-237288",
+  "https://www.shiksha.com/college/sparsh-super-specialty-hospital-bangalore-240880",
+  "https://www.shiksha.com/college/manipal-hospital-kolkata-241922",
+  "https://www.shiksha.com/college/esic-model-hospital-beltola-guwahati-244946",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2301
+    c_count = 3041
 
     try:
         for base_url in BASE_URL:
